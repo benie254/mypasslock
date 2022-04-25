@@ -83,7 +83,7 @@ class Password:
     
     
     @classmethod
-    def pass_gen(self):
+    def generate_password(self):
         
         '''
         Method--generates a random password
