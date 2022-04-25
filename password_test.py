@@ -16,3 +16,12 @@ class TestPassword(unittest.TestCase):
         '''
         
         Password.login_details = [] #empty login credentials list
+        
+    
+    def setUp(self):
+        
+        '''
+        The Set up method--required at the initialization of tests
+        '''
+        
+        self.new_pass = Password('janja','pass123')
