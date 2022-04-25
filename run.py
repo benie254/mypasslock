@@ -311,6 +311,42 @@ def main():
             print('\n')
             print(f'Existing Pass_Account {ex_acc_name} for username: {ex_acc_user} saved')
             print('\n')
+            
+        elif short_code == 'ca':
+            print()
+            
+            #Create new pass account
+            print('New Pass_Account')
+            print('-'*10)
+
+            print()
+            print('Account ...')
+            print()
+            acc_name = input()
+            print()
+            print('-'*10)
+
+            print()
+            print('Email ...')
+            print()
+            acc_email = input()
+            print()
+            print('-'*10)
+                    
+
+            print()
+            print('Phone number ...')
+            print()
+            p_number = input()
+            print()
+            print('-'*10)
+
+            print()
+            print('Username ...')
+            print()
+            acc_user = input()
+            print()
+            print('-'*10)
     
 
 if __name__ = '__main__':
