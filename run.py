@@ -208,6 +208,38 @@ def main():
                         Create a password')
                     print()
                     break
+            
+            #create passlock password  
+            while True:
+                print('Enter C to Create a PassLock password ...\
+                    Enter G to Generate a PassLock password')
+                print()
+                print('-'*10)
+                users_code = input().upper()
+                if users_code == 'C':
+                    print()
+                    print('Create New Password')
+                    print()
+                    credent_pass = input()
+                    print('-'*10)
+                    print()
+                    print(f'Account creation successful. Your new password is: {credent_pass} \
+                        Keep it safe for future reference')
+                    print()
+                    print('-'*10)
+                    save_account_password(create_account_password(credent_user,credent_pass))
+                    break
+                elif users_code == 'G':
+                    credent_pass = pass_gen()
+                    print()
+                    print(f'Account creation successful. Your generated password is: {credent_pass} \
+                        Keep it safe for future reference.')
+                    print('-'*10)
+                    save_account_password(create_account_password(credent_user,credent_pass))
+                    break
+                else:
+                    print('-'*10)
+                    print('Please try again!')
     
 
 if __name__ = '__main__':
