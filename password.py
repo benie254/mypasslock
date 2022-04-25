@@ -52,3 +52,17 @@ class Password:
         for password in cls.login_details:
             if password.lock_user == id:
                 return password
+            
+    
+    @classmethod
+    def pass_exist(cls,id):
+        
+        '''
+        Method--checks if input password exists in credentials list
+        '''
+        
+        for account_password in cls.login_details:
+            if account_password.lock_pass == id:
+                return True
+
+        return False
