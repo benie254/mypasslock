@@ -105,3 +105,7 @@ class TestPassword(unittest.TestCase):
         user_exists = Password.user_exist("Test")
 
         self.assertTrue(user_exists)
+        
+        
+if __name__ == '__main__':
+    unittest.main()
