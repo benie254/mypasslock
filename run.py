@@ -116,6 +116,12 @@ def main():
         print()
         
         first_code = input().lower()
+        
+        #Account login section--log in to passlock
+        if first_code == 'lg':
+            print()
+            print('Account Log In')
+            print('-'*10)
     
 
 if __name__ = '__main__':
