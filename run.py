@@ -143,6 +143,33 @@ def main():
                         Enter an existing username\
                             Or press CTR + Z to exit')
                     print()
+                    
+            
+            #enter existing password--check if it is correct
+            
+            while True:
+                print('Enter your PassLock password ... :')
+                print()
+                pass_id = input()
+                if check_existing_pass(pass_id):
+                    search_pass = find_pass(pass_id)
+                    print(f'{search_pass.lock_pass}')
+                    print('-' * 20)
+                        
+                    print(f'Login successful ...... You are in.')
+                    print('\n')
+                    print(f"Hello, {credent_user}. This is your PassLock account. Wanna have a look around?")
+                    print('\n')
+                    break
+                else:
+                    print('-' * 10)
+                    print()
+                    print(f'Wrong password for account username {credent_user}. \
+                    Please try again\
+                        Or press CTRL + Z to exit')
+                    print()
+                    print('-' * 10)
+            break
     
 
 if __name__ = '__main__':
