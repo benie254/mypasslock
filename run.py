@@ -21,7 +21,7 @@ def existing_account(ex_acc,ex_email,ex_phone,ex_user,ex_password):
 
 
 #create the account login password
-def create_account_password(credent_user,credent_pass):
+def create_password(credent_user,credent_pass):
     
     new_pass = Password(credent_user,credent_pass)
     return new_pass
@@ -37,3 +37,9 @@ def save_new_accounts(account):
 def save_existing_accounts(account):
 
     account.save_existing_account()
+    
+
+#save login password    
+def save_new_password(password):
+    
+    password.save_new_password()
