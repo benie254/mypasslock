@@ -347,6 +347,49 @@ def main():
             acc_user = input()
             print()
             print('-'*10)
+            
+            print()
+            print('Password ...')
+            print()
+               
+            #offer users an option to create a new password or generate one     
+            while True:
+                print('Enter CP to Create a pass_account password ...\
+                        Enter GP to Generate a pass_account password')
+                print()
+                print('-'*10)
+                pass_code = input().upper()
+                if pass_code == 'CP':
+                    print()
+                    print('Create New Password')
+                    print()
+                    acc_pass = input()
+                    print('-'*10)
+                    print()
+                    print(f'Your new password is: {acc_pass}')
+                    print()
+                    print('-'*10)
+                    
+                    save_pass_accounts(create_pass_account(acc_name,acc_email,p_number,acc_user,acc_pass))
+                    break
+                elif pass_code == 'GP':
+                    acc_pass = pass_gen()
+                    print()
+                    print(f'Your generated password is: {acc_pass}')
+                    print('-'*10)
+                    
+                    save_pass_accounts(create_pass_account(acc_name,acc_email,p_number,acc_user,acc_pass))
+                    break
+                else:
+                    print('-'*10)
+                    print()
+                    print("Didn't quite get that. Please use the short codes.")
+                    print()
+                                    
+                    
+            print('\n')
+            print(f'New Pass_Account {acc_name} for username: {acc_user} created')
+            print('\n')
     
 
 if __name__ = '__main__':
