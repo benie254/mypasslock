@@ -88,7 +88,7 @@ def display_accounts():
 
 
 #delete account
-def delete_account(pass_account):
+def delete_account(account):
     
     return Account.delete_account()
 
@@ -227,15 +227,15 @@ def main():
                         Keep it safe for future reference')
                     print()
                     print('-'*10)
-                    save_account_password(create_account_password(credent_user,credent_pass))
+                    save_new_password(create_new_password(credent_user,credent_pass))
                     break
                 elif users_code == 'G':
-                    credent_pass = pass_gen()
+                    credent_pass = generate_password()
                     print()
                     print(f'Account creation successful. Your generated password is: {credent_pass} \
                         Keep it safe for future reference.')
                     print('-'*10)
-                    save_account_password(create_account_password(credent_user,credent_pass))
+                    save_new_password(create_new_password(credent_user,credent_pass))
                     break
                 else:
                     print('-'*10)
@@ -306,7 +306,7 @@ def main():
             print('-'*10)
                     
                     
-            save_existing_pass_accounts(existing_pass_account(ex_acc_name,ex_acc_email,ex_acc_phone,ex_acc_user,ex_acc_pass))
+            save_existing_accounts(existing_account(ex_acc_name,ex_acc_email,ex_acc_phone,ex_acc_user,ex_acc_pass))
                     
             print('\n')
             print(f'Existing Pass_Account {ex_acc_name} for username: {ex_acc_user} saved')
@@ -370,15 +370,15 @@ def main():
                     print()
                     print('-'*10)
                     
-                    save_pass_accounts(create_pass_account(acc_name,acc_email,p_number,acc_user,acc_pass))
+                    save_new_accounts(create_new_account(acc_name,acc_email,p_number,acc_user,acc_pass))
                     break
                 elif pass_code == 'GP':
-                    acc_pass = pass_gen()
+                    acc_pass = generate_password()
                     print()
                     print(f'Your generated password is: {acc_pass}')
                     print('-'*10)
                     
-                    save_pass_accounts(create_pass_account(acc_name,acc_email,p_number,acc_user,acc_pass))
+                    save_new_accounts(create_new_account(acc_name,acc_email,p_number,acc_user,acc_pass))
                     break
                 else:
                     print('-'*10)
@@ -394,14 +394,14 @@ def main():
         elif short_code == 'da':
             
             #display all accounts
-            if display_pass_accounts():
+            if display_accounts():
                 print('-'*10)
                 print()
                 print('Here is a list of all your pass_accounts')
                 print('\n')
                 
 
-                for pass_account in display_pass_accounts():
+                for pass_account in display_accounts():
                     print(f'{pass_account.account} {pass_account.email} ...... {pass_account.username}')
                     print ('\n')
                     print('-'*10)
@@ -424,8 +424,8 @@ def main():
 
             print()
             search_id = input()
-            if check_existing_pass_accounts(search_id):
-                search_account = find_pass_account(search_id)
+            if check_existing_accounts(search_id):
+                search_account = find_account(search_id)
                 print(f'{search_account.account}')
                 print('-' * 10)
                         
@@ -460,9 +460,9 @@ def main():
                 print('-'*10)
                 user_code = input()
                 if user_code == 'y':
-                    if find_pass_account(del_id):
-                        search_account = find_pass_account(del_id)
-                        search_account.delete_pass_account()
+                    if find_account(del_id):
+                        search_account = find_account(del_id)
+                        search_account.delete_account()
                         
                         print('-'*10)
                         print()
