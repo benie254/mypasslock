@@ -45,3 +45,18 @@ class TestPassword(unittest.TestCase):
         
         self.new_pass.save_new_password()
         self.assertEqual(len(Password.login_details),1)
+        
+    
+    def test_find_pass_by_id(self):
+        
+        '''
+        To test if we can find a password by entering its value
+        '''
+        
+        self.new_pass.save_new_password()
+        test_password = Password("Test",'password456')
+        test_password.save_new_password()
+
+        found_pass = Password.find_pass_by_id('password456')
+
+        self.assertEqual(found_pass.lock_pass,test_password.lock_pass)
