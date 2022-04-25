@@ -125,3 +125,5 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(Account.display_accounts(), Account.account_details)
         
         
+if __name__ == '__main__':
+    unittest.main()
