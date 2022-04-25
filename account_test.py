@@ -25,3 +25,16 @@ class TestAccount(unittest.TestCase):
         '''
         
         self.new_account = Account('Twitter', 'benie@gmail.com', '0708646667', 'benie','mypassword')
+        
+    
+    def test_init(self):
+        
+        '''
+        Object initialization test case--test_init
+        '''
+        
+        self.assertEqual(self.new_account.account_name,'Twitter')
+        self.assertEqual(self.new_account.email,'benie@gmail.com')
+        self.assertEqual(self.new_account.phone_number,'0708646667')
+        self.assertEqual(self.new_account.username,'benie')
+        self.assertEqual(self.new_account.password,'mypassword')
