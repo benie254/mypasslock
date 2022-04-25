@@ -45,7 +45,7 @@ def save_new_password(password):
     password.save_new_password()
     
     
-#finding a pass_account
+#finding an account
 def find_account(id):
 
     return Account.find_by_id(id)
@@ -61,3 +61,21 @@ def find_pass(id):
 def find_user(id):
     
     return Password.find_user_by_id(id)
+
+
+#check if account exists
+def check_existing_accounts(id):
+
+    return Account.account_exist(id)
+
+
+#check if login password is correct
+def check_existing_pass(id):
+
+    return Password.pass_exist(id)
+
+
+#check if login user exists
+def check_existing_user(id):
+
+    return Password.user_exist(id)
