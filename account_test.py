@@ -8,6 +8,16 @@ class TestAccount(unittest.TestCase):
     To define test cases for the pass account's behaviors
     '''
     
+    
+    def tearDown(self):
+        
+        '''
+        Method--cleans up after tests--enables accurate test results
+        '''
+        
+        Account.account_details = [] #empty list--to hold account details
+    
+    
     def setUp(self):
         
         '''
