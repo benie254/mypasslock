@@ -240,6 +240,29 @@ def main():
                 else:
                     print('-'*10)
                     print('Please try again!')
+                    
+        else:
+            while True:
+                print('-' * 5)
+                print()
+                print("Didn't quite get that. Use the short codes...")
+                print()
+                print('-' * 5)
+                break
+            
+    
+    #Pass locker home page  
+    
+    while True:
+        
+        print("Use these short codes:")
+        print('-'*5)
+        print(" se - save existing acc, ca - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit")
+        print()
+
+        short_code = input().lower() 
+        if short_code == 'se':
+            print()
     
 
 if __name__ = '__main__':
