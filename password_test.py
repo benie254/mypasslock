@@ -90,3 +90,18 @@ class TestPassword(unittest.TestCase):
         pass_exists = Password.pass_exist("password456")
 
         self.assertTrue(pass_exists)
+        
+        
+    def test_user_exists(self):
+        
+        '''
+        To test if the user exists in the login credentials list
+        '''
+        
+        self.new_pass.save_new_password()
+        test_password = Password("Test", 'password456')
+        test_password.save_new_password()
+
+        user_exists = Password.user_exist("Test")
+
+        self.assertTrue(user_exists)
