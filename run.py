@@ -493,7 +493,23 @@ def main():
                     print("Didn't quite get that. Please use the short codes!")
                     print()
                     print('-'*10) 
+        
+        #exit pass locker
+        elif short_code == 'ex':
+
+            print('-'*10)
+            print('\n')
+            print('Bye ......')
+            print('\n')
+            print('-'*10)
+            break
+        else:
+            print('-'*10)
+            print('\n')
+            print("Didn't quite get that. Please use the short codes.")
+            print('\n')
+            print('-'*10)
     
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
