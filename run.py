@@ -114,7 +114,7 @@ def main():
     while True:
         print('Type lg to LOG IN \
             \
-            Type cr to CREATE a new account ')
+            Type sg to SIGN UP ')
         print()
         
         first_code = input().lower()
@@ -201,7 +201,7 @@ def main():
         
         #Account sign up section--create passlock account
         
-        elif first_code == 'cr':
+        elif first_code == 'sg':
             
             print('-'*10)
             print()
