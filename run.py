@@ -79,3 +79,22 @@ def check_existing_pass(id):
 def check_existing_user(id):
 
     return Password.user_exist(id)
+
+
+#display all accounts
+def display_accounts():
+
+    return Account.display_accounts()
+
+
+#delete account
+def delete_account(pass_account):
+    
+    return Account.delete_account()
+
+
+#generate random password
+def pass_gen():
+    
+    generate_pass = Password.pass_gen()
+    return generate_pass
