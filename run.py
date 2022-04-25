@@ -31,3 +31,9 @@ def create_account_password(credent_user,credent_pass):
 def save_new_accounts(account):
 
     account.save_new_account()
+    
+
+#save existing accounts
+def save_existing_accounts(account):
+
+    account.save_existing_account()
