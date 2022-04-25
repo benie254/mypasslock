@@ -32,3 +32,12 @@ class Account:
         self.phone_number = phone_number
         self.username = username
         self.password = password
+        
+    
+    def delete_account(self):
+        
+        '''
+        Method--deletes account object
+        '''
+        
+        Account.account_details.remove(self)
