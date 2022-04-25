@@ -43,8 +43,18 @@ class TestAccount(unittest.TestCase):
     def test_save_new_account(self):
         
         '''
-        To test if pass_account object is saved into the account details list
+        To test if account object is saved into the account details list
         '''
         
         self.new_account.save_new_account()
+        self.assertEqual(len(Account.account_details),1)
+        
+        
+    def test_save_existing_account(self):
+        
+        '''
+        To test if existing account object is saved in the account details list
+        '''
+        
+        self.new_account.save_existing_account()
         self.assertEqual(len(Account.account_details),1)
