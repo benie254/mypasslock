@@ -99,3 +99,18 @@ class TestAccount(unittest.TestCase):
         found_account = Account.find_by_id('Test')
 
         self.assertEqual(found_account.account_name,test_account.account_name)
+        
+    
+    def test_account_exists(self):
+        
+        '''
+        To test if the account object exists in the account details list
+        '''
+        
+        self.new_account.save_new_account()
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
+        test_account.save_new_account()
+
+        account_exists = Account.account_exist("Test")
+
+        self.assertTrue(account_exists)
