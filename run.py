@@ -412,6 +412,36 @@ def main():
                     print("You don't seem to have any pass_accounts saved yet.")
                     print('\n')
                     print('-'*10)
+        
+        elif short_code == 'fa':
+            
+            #search saved account
+            print('-'*10)
+            print()
+            print('Enter the account you want to search for: ')
+            print()
+            print('-'*10)
+
+            print()
+            search_id = input()
+            if check_existing_pass_accounts(search_id):
+                search_account = find_pass_account(search_id)
+                print(f'{search_account.account}')
+                print('-' * 10)
+                        
+                print()
+                print(f'Email ...... {search_account.email}')
+                print(f'Phone number ...... {search_account.phone_number}')
+                print(f'Username ...... {search_account.username}')
+                print(f'Password ...... {search_account.password}')
+                print('\n')
+            
+            else:
+                print('-'*10)
+                print()
+                print('That pass_account does not exist')
+                print()
+                print('-'*10)
     
 
 if __name__ = '__main__':
