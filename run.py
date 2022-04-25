@@ -390,6 +390,28 @@ def main():
             print('\n')
             print(f'New Pass_Account {acc_name} for username: {acc_user} created')
             print('\n')
+            
+        elif short_code == 'da':
+            
+            #display all accounts
+            if display_pass_accounts():
+                print('-'*10)
+                print()
+                print('Here is a list of all your pass_accounts')
+                print('\n')
+                
+
+                for pass_account in display_pass_accounts():
+                    print(f'{pass_account.account} {pass_account.email} ...... {pass_account.username}')
+                    print ('\n')
+                    print('-'*10)
+            
+            else:
+                    print('-'*10)
+                    print('\n')
+                    print("You don't seem to have any pass_accounts saved yet.")
+                    print('\n')
+                    print('-'*10)
     
 
 if __name__ = '__main__':
