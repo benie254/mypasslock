@@ -41,3 +41,15 @@ class Account:
         '''
         
         Account.account_details.remove(self)
+        
+    
+    @classmethod
+    def find_by_id(cls,id):
+        
+        '''
+        Method--takes in a list object's name and returns its details
+        '''
+        
+        for pass_account in cls.account_details:
+            if pass_account.account == id:
+                return pass_account
