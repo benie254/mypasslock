@@ -43,3 +43,21 @@ def save_existing_accounts(account):
 def save_new_password(password):
     
     password.save_new_password()
+    
+    
+#finding a pass_account
+def find_account(id):
+
+    return Account.find_by_id(id)
+
+
+#find a password
+def find_pass(id):
+
+    return Password.find_pass_by_id(id)
+
+
+#find a passlock user
+def find_user(id):
+    
+    return Password.find_user_by_id(id)
