@@ -7,7 +7,7 @@ class Account:
     account_details = [] #empty account details list
     
     
-    def save_pass_account(self):
+    def save_new_account(self):
         
         '''
         Method--saves new account details to the list
