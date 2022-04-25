@@ -37,4 +37,4 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.new_account.email,'benie@gmail.com')
         self.assertEqual(self.new_account.phone_number,'0708646667')
         self.assertEqual(self.new_account.username,'benie')
-        self.assertEqual(self.new_account.password,'mypassword')
+        self.assertEqual(self.new_account.password,'mypass@123!')
