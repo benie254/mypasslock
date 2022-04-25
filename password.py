@@ -80,3 +80,20 @@ class Password:
                 return True
 
         return False
+    
+    
+    @classmethod
+    def pass_gen(self):
+        
+        '''
+        Method--generates a random password
+        '''
+        
+        my_combo = (''.join(chr(random.randrange(65,90)) for i in range(1))).lower()
+        my_combo2 = ''.join(chr(random.randrange(65,90)) for i in range(2))
+        my_combo3 = ''.join(chr(random.randrange(65,90)) for i in range(1)).lower()
+        combo_2 = my_combo3 + my_combo2 + my_combo
+        my_rand = random.randint(1000,9999)
+        random_pass = '@' + combo_2 + str(my_rand) + '?!'
+        
+        return(random_pass)
