@@ -7,3 +7,12 @@ class TestPassword(unittest.TestCase):
     '''
     To define test cases for the account password's behaviors
     '''
+    
+    
+    def tearDown(self):
+        
+        '''
+        Method--cleans up after tests--enables accurate test results
+        '''
+        
+        Password.login_details = [] #empty login credentials list
