@@ -103,6 +103,20 @@ def generate_password():
 #call all methods
 def main():
     
+    #welcome section
+    print('\n')
+    print("Welcome to your pass_account!")
+    print('\n')
+    
+    #short codes to begin
+    while True:
+        print('Type lg to LOG IN \
+            \
+            Type cr to CREATE a new account ')
+        print()
+        
+        first_code = input().lower()
+    
 
 if __name__ = '__main__':
     main()
