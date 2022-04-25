@@ -14,7 +14,7 @@ class Password:
     def save_new_password(self):
         
         '''
-        Method--saves login credentials to credentialslist
+        Method--saves login credentials to credentials list
         '''
         
         Password.login_details.append(self)
