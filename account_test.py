@@ -24,7 +24,7 @@ class TestAccount(unittest.TestCase):
         The Set up method--required at the initialization of tests
         '''
         
-        self.new_account = Account('Twitter', 'benie@gmail.com', '0708646667', 'benie','mypassword')
+        self.new_account = Account('Twitter', 'benie@gmail.com', '0708646667', 'benie','mypass@123!')
         
     
     def test_init(self):
@@ -67,7 +67,7 @@ class TestAccount(unittest.TestCase):
         '''
         
         self.new_account.save_new_account()
-        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'pass321$%')
         test_account.save_new_account()
         self.assertEqual(len(Account.account_details),2)
         
@@ -78,9 +78,9 @@ class TestAccount(unittest.TestCase):
         To test if we can delete an account from the account details list
         '''
         
-        self.new_account.delete_account()
-        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
-        test_account.delete_account()
+        self.new_account.save_new_account()
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'pass321$%')
+        test_account.save_new_account()
 
         self.new_account.delete_account()
         self.assertEqual(len(Account.account_details),1)
@@ -93,7 +93,7 @@ class TestAccount(unittest.TestCase):
         '''
         
         self.new_account.save_new_account()
-        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'pass321$%')
         test_account.save_new_account()
 
         found_account = Account.find_by_id('Test')
@@ -108,7 +108,7 @@ class TestAccount(unittest.TestCase):
         '''
         
         self.new_account.save_new_account()
-        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'pass321$%')
         test_account.save_new_account()
 
         account_exists = Account.account_exist("Test")
