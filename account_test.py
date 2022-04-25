@@ -70,3 +70,17 @@ class TestAccount(unittest.TestCase):
         test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
         test_account.save_new_account()
         self.assertEqual(len(Account.account_details),2)
+        
+        
+    def test_delete_account(self):
+        
+        '''
+        To test if we can delete an account from the account details list
+        '''
+        
+        self.new_account.delete_account()
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
+        test_account.delete_account()
+
+        self.new_account.delete_account()
+        self.assertEqual(len(Account.account_details),1)
