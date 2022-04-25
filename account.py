@@ -50,6 +50,6 @@ class Account:
         Method--takes in a list object's name and returns its details
         '''
         
-        for pass_account in cls.account_details:
-            if pass_account.account == id:
-                return pass_account
+        for account in cls.account_details:
+            if account.account_name == id:
+                return account
