@@ -442,6 +442,57 @@ def main():
                 print('That pass_account does not exist')
                 print()
                 print('-'*10)
+                
+        elif short_code == 'del':
+             
+             #delete a saved account       
+            print('-'*10)
+            print()
+            print('Enter the account you want to delete: ')
+            print()
+            print('-'*10)
+                    
+            del_id = input().lower()
+            print()
+            while True:
+                print(f'Are you sure you want to delete this pass account? *** y (for YES) / n (for NO)')
+                print()
+                print('-'*10)
+                user_code = input()
+                if user_code == 'y':
+                    if find_pass_account(del_id):
+                        search_account = find_pass_account(del_id)
+                        search_account.delete_pass_account()
+                        
+                        print('-'*10)
+                        print()
+                        print(f"Your pass_account {search_account.account} has been deleted")
+                        print()
+                        
+                        print('-'*10)
+                        print()
+                        break
+                    
+                    else:
+                        print('-'*10)
+                        print()
+                        print('Sorry! Account does not exist')
+                        print()
+                        print('-'*10)
+                        break
+                elif user_code == 'n':
+                    print('-'*10)
+                    print()
+                    print('Account will not be deleted')
+                    print()
+                    print('-'*10)
+                    break
+                else:
+                    print('-'*10)
+                    print()
+                    print("Didn't quite get that. Please use the short codes!")
+                    print()
+                    print('-'*10) 
     
 
 if __name__ = '__main__':
