@@ -67,3 +67,13 @@ class Account:
                 return True
 
         return False
+    
+    
+    @classmethod
+    def display_accounts(cls):
+        
+        '''
+        Method--returns all saved objects from the list
+        '''
+        
+        return cls.account_details
