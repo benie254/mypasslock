@@ -75,3 +75,18 @@ class TestPassword(unittest.TestCase):
         found_user = Password.find_user_by_id('Test')
 
         self.assertEqual(found_user.lock_user,test_password.lock_user)
+        
+        
+    def test_pass_exists(self):
+        
+        '''
+        To test if the password exists in the login credentials list
+        '''
+        
+        self.new_pass.save_new_password()
+        test_password = Password("Test", 'password456')
+        test_password.save_new_password()
+
+        pass_exists = Password.pass_exist("password456")
+
+        self.assertTrue(pass_exists)
