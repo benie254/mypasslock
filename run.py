@@ -94,7 +94,7 @@ def delete_account(pass_account):
 
 
 #generate random password
-def pass_gen():
+def generate_password():
     
-    generate_pass = Password.pass_gen()
+    generate_pass = Password.generate_password()
     return generate_pass
