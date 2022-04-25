@@ -40,3 +40,15 @@ class Password:
         for password in cls.login_details:
             if password.lock_pass == id:
                 return password
+            
+    
+    @classmethod
+    def find_user_by_id(cls,id):
+        
+        '''
+        Method--takes in username and finds it from the credentials list
+        '''
+        
+        for password in cls.login_details:
+            if password.lock_user == id:
+                return password
