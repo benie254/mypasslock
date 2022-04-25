@@ -56,14 +56,14 @@ class Account:
             
     
     @classmethod
-    def pass_account_exist(cls,id):
+    def account_exist(cls,id):
         
         '''
         Method--checks if object exists by taking in its name
         '''
         
-        for pass_account in cls.account_details:
-            if pass_account.account == id:
+        for account in cls.account_details:
+            if account.account_name == id:
                 return True
 
         return False
