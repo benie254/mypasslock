@@ -25,3 +25,13 @@ class TestPassword(unittest.TestCase):
         '''
         
         self.new_pass = Password('janja','pass123')
+        
+    
+    def test_init(self):
+        
+        '''
+        Object initialization test case--test_init
+        '''
+        
+        self.assertEqual(self.new_pass.lock_user,'janja')
+        self.assertEqual(self.new_pass.lock_pass,'pass123')
