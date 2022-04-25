@@ -263,6 +263,54 @@ def main():
         short_code = input().lower() 
         if short_code == 'se':
             print()
+            
+            #add existing account 
+            print('Add Existing Account')
+            print()
+            print('-'*10)
+                    
+            print()
+            print('Account name ...')
+            print()
+            ex_acc_name = input()
+            print()
+            print('-'*10)
+                    
+            print()
+            print('Username ...')
+            print()
+            ex_acc_user = input()
+            print()
+            print('-'*10)
+                    
+            print()
+            print('Password')
+            print()
+            ex_acc_pass = input()
+            print()
+            print()
+            print('-'*10)
+                    
+            print()
+            print('Email--if relevant')
+            print()
+            ex_acc_email = input()
+            print()
+            print('-'*10)
+                    
+            print()
+            print('Phone number--if relevant')
+            print()
+            ex_acc_phone = input()
+            print()
+            print('-'*10)
+                    
+                    
+            save_existing_pass_accounts(existing_pass_account(ex_acc_name,ex_acc_email,ex_acc_phone,ex_acc_user,ex_acc_pass))
+                    
+            print('\n')
+            print(f'Existing Pass_Account {ex_acc_name} for username: {ex_acc_user} saved')
+            print('\n')
     
 
 if __name__ = '__main__':
