@@ -84,3 +84,14 @@ class TestAccount(unittest.TestCase):
 
         self.new_account.delete_account()
         self.assertEqual(len(Account.account_details),1)
+        
+        
+    def test_find_account_by_id(self):
+        
+        self.new_account.save_new_account()
+        test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
+        test_account.save_new_account()
+
+        found_account = Account.find_by_id('Test')
+
+        self.assertEqual(found_account.account_name,test_account.account_name)
