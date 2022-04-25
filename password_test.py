@@ -35,3 +35,13 @@ class TestPassword(unittest.TestCase):
         
         self.assertEqual(self.new_pass.lock_user,'janja')
         self.assertEqual(self.new_pass.lock_pass,'pass123')
+        
+    
+    def test_save_new_password(self):
+        
+        '''
+        To test if password object is saved into the login credentials list
+        '''
+        
+        self.new_pass.save_new_password()
+        self.assertEqual(len(Password.login_details),1)
