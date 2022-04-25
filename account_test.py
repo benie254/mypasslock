@@ -88,6 +88,10 @@ class TestAccount(unittest.TestCase):
         
     def test_find_account_by_id(self):
         
+        '''
+        To test if we can find an account by entering its name
+        '''
+        
         self.new_account.save_new_account()
         test_account = Account("Test", "user@email.com", "0712345678", "user",'password')
         test_account.save_new_account()
