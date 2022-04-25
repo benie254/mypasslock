@@ -38,3 +38,13 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.new_account.phone_number,'0708646667')
         self.assertEqual(self.new_account.username,'benie')
         self.assertEqual(self.new_account.password,'mypass@123!')
+        
+    
+    def test_save_new_account(self):
+        
+        '''
+        To test if pass_account object is saved into the account details list
+        '''
+        
+        self.new_account.save_new_account()
+        self.assertEqual(len(Account.account_details),1)
