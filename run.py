@@ -170,6 +170,15 @@ def main():
                     print()
                     print('-' * 10)
             break
+        
+        #Account sign up section--create passlock account
+        
+        elif first_code == 'cr':
+            
+            print('-'*5)
+            print()
+            print('Account Sign Up')
+            print()
     
 
 if __name__ = '__main__':
