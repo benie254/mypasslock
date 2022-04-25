@@ -317,11 +317,14 @@ def main():
     
     while True:
         
-        print("Use these short codes:")
+        print()
         
+        print("Use these short codes :")
+        
+        print()
         print('-'*10)
         
-        print(" se - save existing acc, ca - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit")
+        print(" se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit")
         
         print()
 
@@ -396,7 +399,7 @@ def main():
             
             print('\n')
             
-        elif short_code == 'ca':
+        elif short_code == 'cn':
             
             print()
             
