@@ -7,7 +7,7 @@ account_details = []
 
 
 #create an account
-def create_account(acc,email,phone,user,password):
+def create_new_account(acc,email,phone,user,password):
 
     new_account = Account(acc,email,phone,user,password)
     return new_account
@@ -21,7 +21,7 @@ def existing_account(ex_acc,ex_email,ex_phone,ex_user,ex_password):
 
 
 #create the account login password
-def create_password(credent_user,credent_pass):
+def create_new_password(credent_user,credent_pass):
     
     new_pass = Password(credent_user,credent_pass)
     return new_pass
