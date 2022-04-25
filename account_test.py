@@ -114,3 +114,14 @@ class TestAccount(unittest.TestCase):
         account_exists = Account.account_exist("Test")
 
         self.assertTrue(account_exists)
+        
+    
+    def test_display_all_accounts(self):
+        
+        '''
+        To test if we can view all objects contained in the account details list
+        '''
+        
+        self.assertEqual(Account.display_accounts(), Account.account_details)
+        
+        
