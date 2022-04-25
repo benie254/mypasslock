@@ -98,3 +98,11 @@ def generate_password():
     
     generate_pass = Password.generate_password()
     return generate_pass
+
+
+#call all methods
+def main():
+    
+
+if __name__ = '__main__':
+    main()
