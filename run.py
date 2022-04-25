@@ -122,6 +122,27 @@ def main():
             print()
             print('Account Log In')
             print('-'*10)
+            
+            #enter existing passlock username--check if user exists
+            while True:
+                
+                print('Enter your PassLock username ... :')
+                print()
+                user_id = input()
+                if check_existing_user(user_id):
+                    search_user = find_user(user_id)
+                    print(f'{search_user.lock_user}')
+                    print('-' * 20)
+                        
+                    print(f'One more thing, {search_user.lock_user}!')
+                    print()
+                    break
+                else:
+                    print()
+                    print('Sorry! User does not exist.\
+                        Enter an existing username\
+                            Or press CTR + Z to exit')
+                    print()
     
 
 if __name__ = '__main__':
