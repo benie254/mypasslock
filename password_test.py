@@ -60,3 +60,18 @@ class TestPassword(unittest.TestCase):
         found_pass = Password.find_pass_by_id('password456')
 
         self.assertEqual(found_pass.lock_pass,test_password.lock_pass)
+        
+        
+    def test_find_user_by_id(self):
+        
+        '''
+        To test if we can find a username by entering it
+        '''
+        
+        self.new_pass.save_new_password()
+        test_password = Password("Test",'password456')
+        test_password.save_new_password()
+
+        found_user = Password.find_user_by_id('Test')
+
+        self.assertEqual(found_user.lock_user,test_password.lock_user)
