@@ -15,6 +15,15 @@ class Account:
         
         Account.account_details.append(self)
         
+        
+    def save_existing_account(self):
+        
+        '''
+        Method--saves existing account details to the list
+        '''
+        
+        Account.account_details.append(self)
+        
     
     def __init__(self, account_name, email, phone_number, username, password):
         
