@@ -179,6 +179,35 @@ def main():
             print()
             print('Account Sign Up')
             print()
+            
+            #create passlock username--checks if it already exists
+            print('Create a PassLock username ...')
+            print()
+            print('-'*5)
+            print()
+            
+            
+            while True:
+                
+                
+                credent_user = input()
+                print()
+            
+                print('-'*5)
+                
+                if check_existing_user(credent_user):
+                    search_user = find_user(credent_user)
+                    print()
+                    print(f'Username {search_user.lock_user} exists! \
+                        Please create a unique username\
+                        Or press CTRL + Z to exit.')
+                    print()
+                else:
+                    print()
+                    print(f'One more thing, {credent_user}! \
+                        Create a password')
+                    print()
+                    break
     
 
 if __name__ = '__main__':
