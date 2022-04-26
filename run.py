@@ -106,7 +106,7 @@ def main():
     #welcome section
     print('\n')
     
-    print("Welcome to your account!")
+    print("Welcome to your myPassLock account!")
     
     print('\n')
     
