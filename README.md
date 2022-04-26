@@ -19,10 +19,12 @@ The app enables users to save any account with its credentials (username, phone,
 
 ## Behavior Driven Development--BDD
 
-User receives a welcome message. 
-
-OUTPUT: "Welcome to your myPassLock account!"
-OUTPUT: "Typer lg to LOG IN \ Typer sg to SIGN UP"
+1. User receives a welcome message. 
+-OUTPUT: "Welcome to your myPassLock account!"
+2. Short codes
+3. 
+4. 
+5. OUTPUT: "Typer lg to LOG IN \ Typer sg to SIGN UP"
 INPUT: "sg"
 OUTPUT: "Account Sign Up"
 OUTPUT: "Create a PassLock username ..."
