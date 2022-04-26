@@ -530,7 +530,7 @@ def main():
 
                 for account in display_accounts():
                     
-                    print(f'{account.account_name} {account.email} ...... {account.username}')
+                    print(f'Acc: {account.account_name} | eml... {account.email} | usr... {account.username} | pass ... {account.password}')
                     
                     print ('\n')
                     print('-'*10)
@@ -566,8 +566,11 @@ def main():
                 print('-' * 10)
                 print()
                 
-                print('Results for account:')
-                print(f'{search_account.account_name} ......')
+                print('Results for ......')
+                
+                print()
+                
+                print(f'Account name: {search_account.account_name}')
                       
                 print()
                 
