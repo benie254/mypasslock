@@ -20,7 +20,7 @@ The app enables users to save any account with its credentials (username, phone,
 ## Behavior Driven Development--BDD
 
 1. User receives a welcome message. 
--OUTPUT: "Welcome to your myPassLock account!"
+- OUTPUT: "Welcome to your myPassLock account!"
 2. Short codes
 3. 
 4. 
