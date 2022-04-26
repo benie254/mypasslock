@@ -19,76 +19,76 @@ The app enables users to save any account with its credentials (username, phone,
 
 ## Behavior Driven Development--BDD
 
-1. User welcome message. 
-- OUTPUT: "Welcome to your myPassLock account!"
-2. Short codes 
-- OUTPUT: "Typer lg to LOG IN \ Typer sg to SIGN UP"
-3. Account sign up
-- INPUT: "sg"
-- OUTPUT: "Account Sign Up"
-- OUTPUT: "Create a PassLock username ..."
-- INPUT: "benie" 
-- OUTPUT: "One more thing, benie! \ Create a password."
-- OUTPUT: "Enter C to Create a PassLock password ... \ Enter G to Generate a PassLock password."
-- INPUT: "C"
-- OUTPUT: "Create New Password"
-- INPUT: "testerPass123!"
-- OUTPUT: "Account creation successful. Your new password is: testerPass123! \ Keep it safe for future reference."
-- INPUT: "G"
-- OUTPUT: "Account creation successful. Your generated password is: @kYYd2901?! \ Keep it safe for future reference."
-4. Short codes
-- OUTPUT: "Type lg to LOG IN \ Type sg to SIGN UP"
-5. Account log in
-- INPUT: "lg"
-- OUTPUT: "Enter your PassLock username ... :"
-- INPUT: "benie"
-- OUTPUT: "One more thing, benie!"
-- OUTPUT: "Enter your PassLock password ... :"
-- INPUT: "@kYYd2901?!"
-- OUTPUT: "Login successfull ...... You are in."
-6. Platform welcome message
-- OUTPUT: "Hello, benie. This is your PassLock account. Wanna have a look around?"
-7. Short codes
-- OUTPUT: "Use these short codes:"
-- OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
-8. Save existing account
-- INPUT: "se"
-- OUTPUT: "Add Existing Account"
-- OUTPUT: "Account name ...", "Username ...", "Password", "Email--if relevant", "phone number--if relevant"
-- INPUT: "Twitter", "benie254", "hala123!", "benie@gmail.com", "0712 345 678"
-- OUTPUT: "Existing Account Twitter for username: benie254 saved."
-9. Short codes
-- OUTPUT: "Use these short codes:"
-- OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
-10. Display all accounts
-- INPUT: "da"
-- OUTPUT: "Here is a list of all your accounts", "Acc: Twitter | eml... benie@gmail.com | usr... benie254 | pass... hala123!"
-11. Short codes
-- OUTPUT: "Use these short codes:"
-- OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
-12. Find account
-- INPUT: "fa"
-- OUTPUT: "Enter the account you want to search for:"
-- INPUT: "Twitter"
-- OUTPUT: "Results for ......", "Account name: Twitter", "Email ...... benie@gmail.com", "Phone number ...... 0712 345 678", "Password ...... hala123!"
-13. Short codes
-- OUTPUT: "Use these short codes:"
-- OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
-14. Delete account
-- INPUT: "del"
-- OUPUT: "Enter the account you want to delete:"
-- INPUT: "Twitter"
-- OUTPUT: "Are you sure you want to delete this pass account? *** y (for YES) / n (for NO)"
-- INPUT: "n"
-- OUTPUT: "Account will not be deleted"
-- INPUT: "y"
-- OUTPUT: "Your account Twitter has been deleted"
-15. Short codes
-- OUTPUT: "Use these short codes:"
-- OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
-16. Exit
-- INPUT: "ex"
-- OUTPUT: terminates operations--breaks out of app.
+**1. User welcome message.** 
+     - OUTPUT: "Welcome to your myPassLock account!"
+**2. Short codes** 
+     - OUTPUT: "Typer lg to LOG IN \ Typer sg to SIGN UP"
+**3. Account sign up**
+     - INPUT: "sg"
+     - OUTPUT: "Account Sign Up"
+     - OUTPUT: "Create a PassLock username ..."
+     - INPUT: "benie" 
+     - OUTPUT: "One more thing, benie! \ Create a password."
+     - OUTPUT: "Enter C to Create a PassLock password ... \ Enter G to Generate a PassLock password."
+     - INPUT: "C"
+     - OUTPUT: "Create New Password"
+     - INPUT: "testerPass123!"
+     - OUTPUT: "Account creation successful. Your new password is: testerPass123! \ Keep it safe for future reference."
+     - INPUT: "G"
+     - OUTPUT: "Account creation successful. Your generated password is: @kYYd2901?! \ Keep it safe for future reference."
+**4. Short codes**
+     - OUTPUT: "Type lg to LOG IN \ Type sg to SIGN UP"
+**5. Account log in**
+     - INPUT: "lg"
+     - OUTPUT: "Enter your PassLock username ... :"
+     - INPUT: "benie"
+     - OUTPUT: "One more thing, benie!"
+     - OUTPUT: "Enter your PassLock password ... :"
+     - INPUT: "@kYYd2901?!"
+     - OUTPUT: "Login successfull ...... You are in."
+**6. Platform welcome message**
+     - OUTPUT: "Hello, benie. This is your PassLock account. Wanna have a look around?"
+**7. Short codes**
+     - OUTPUT: "Use these short codes:"
+     - OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
+**8. Save existing account**
+     - INPUT: "se"
+     - OUTPUT: "Add Existing Account"
+     - OUTPUT: "Account name ...", "Username ...", "Password", "Email--if relevant", "phone number--if relevant"
+     - INPUT: "Twitter", "benie254", "hala123!", "benie@gmail.com", "0712 345 678"
+     - OUTPUT: "Existing Account Twitter for username: benie254 saved."
+**9. Short codes**
+     - OUTPUT: "Use these short codes:"
+     - OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
+**10. Display all accounts**
+      - INPUT: "da"
+      - OUTPUT: "Here is a list of all your accounts", "Acc: Twitter | eml... benie@gmail.com | usr... benie254 | pass... hala123!"
+**11. Short codes**
+      - OUTPUT: "Use these short codes:"
+      - OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
+**12. Find account**
+      - INPUT: "fa"
+      - OUTPUT: "Enter the account you want to search for:"
+      - INPUT: "Twitter"
+      - OUTPUT: "Results for ......", "Account name: Twitter", "Email ...... benie@gmail.com", "Phone number ...... 0712 345 678", "Password ...... hala123!"
+**13. Short codes**
+      - OUTPUT: "Use these short codes:"
+      - OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
+**14. Delete account**
+      - INPUT: "del"
+      - OUPUT: "Enter the account you want to delete:"
+      - INPUT: "Twitter"
+      - OUTPUT: "Are you sure you want to delete this pass account? *** y (for YES) / n (for NO)"
+      - INPUT: "n"
+      - OUTPUT: "Account will not be deleted"
+      - INPUT: "y"
+      - OUTPUT: "Your account Twitter has been deleted"
+**15. Short codes**
+      - OUTPUT: "Use these short codes:"
+      - OUTPUT: "se - save existing acc, cn - create new acc, da - display accs, fa - find acc, del - delete acc, ex - exit"
+**16. Exit**
+      - INPUT: "ex"
+      - OUTPUT: terminates operations--breaks out of app.
 
 
 ## Setup/Installation Requirements
